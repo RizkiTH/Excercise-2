@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Karukukatoru</title>
+
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<!-- pembungkus konten kalkulator-->
+<div class="wrapper konten">
+    <!-- main phone -->
+    <div id="kalkulator" class="container">
+        <!-- layar -->
+        <div class="layar">
+            <!-- layar kalkulator -->
+            <div class="layar-container">
+                <div id="riwayat" class="well"></div>
+                <input type="text" id="tampilan" class="well" readonly />
+            </div>
+            <!-- pe,batas -->
+            <div id="pembatas"></div>
+            <div class="tombol-container">
+                <div class="tombol-row top">
+                    <!-- <button class="del">AC</button> -->
+                    <button class="del" onclick="reset('')">CE</button>
+                    <button id="backspace">DEL</button>
+                    <button class="perhitungan" onclick="v('/')">/</button>
+                    <button class="perhitungan" onclick="v('*')">*</button>
+                </div>
+                <!-- <div class="tombol-row">
+                    <button>&#8730</button>
+                    <button>x<sup>3</sup></button>
+                    <button>x<sup>2</sup></button>
+                    <button class="perhitungan" onclick="v('*')">*</button>
+                </div> -->
+                <div class="tombol-row">
+                    <button class="angka" onclick="v('7')">7</button>
+                    <button class="angka" onclick="v('8')">8</button>
+                    <button class="angka" onclick="v('9')">9</button>
+                    <button class="perhitungan" onclick="v('-')">-</button>
+                </div>
+                <div class="tombol-row">
+                    <button class="angka" onclick="v('4')">4</button>
+                    <button class="angka" onclick="v('5')">5</button>
+                    <button class="angka" onclick="v('6')">6</button>
+                    <button id="pertambahan" class="perhitungan" onclick="v('+')">+</button>
+                </div>
+                <div class="tombol-row">
+                    <button class="angka" onclick="v('1')">1</button>
+                    <button class="angka" onclick="v('2')">2</button>
+                    <button class="angka" onclick="v('3')">3</button>
+                </div>
+                <div class="tombol-row">
+                    <button class="angka" onclick="v('0')">0</button>
+                    <button class="angka" onclick="v('00')">00</button>
+                    <button onclick="v('.')">.</button>
+                    <button id="samadengan" onclick="samadengan()">=</button>
+                </div>
+            </div>
+            <div class="copyright-conatainer container">
+                <div class="copyright">
+                    KARUKURATORU
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+<footer class="footer-copyright text-right py-3 text-light font-weight-bold mr-1 pr-3">© 2019 ryumada_rizuki
+</footer>
+
+<!-- script yg dipakai -->
+<script src="./assets/vendor/jquery/jquery-3.4.1.min.js"></script>
+<script src="./assets/js/js.js"></script>
+
+</body>
+</html>
